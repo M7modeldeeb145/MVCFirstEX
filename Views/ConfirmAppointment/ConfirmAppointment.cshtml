@@ -1,0 +1,14 @@
+﻿@model List<AppointmentData>
+<table class="table table-striped">
+	@{
+		foreach(var item in Model)
+		{
+			<tr>
+				<td>@item.PatientName</td>
+				<td>@item.AppointmentDate</td>
+				<td>@item.AppointmentTime</td>
+			</tr>
+		}
+	}
+	
+</table>
